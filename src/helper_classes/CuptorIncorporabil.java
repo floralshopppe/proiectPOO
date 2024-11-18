@@ -1,16 +1,16 @@
 package helper_classes;
 
 public class CuptorIncorporabil implements EchipamentBucatarie {
-    // Atribute specifice Cuptor Incorporabil
+    // atribute specifice Cuptor Incorporabil
     String marca;
     String model;
     double pret;
-    int capacitate; // în litri
+    int capacitate; // in litri
     int numarPrograme;
     boolean functieAutocuratare;
     String clasaEnergetica;
 
-    // Constructor fără argumente
+    // constructor fara argumente
     public CuptorIncorporabil() {
         this.marca = "Default";
         this.model = "Standard";
@@ -21,7 +21,7 @@ public class CuptorIncorporabil implements EchipamentBucatarie {
         this.clasaEnergetica = "A+";
     }
 
-    // Constructor cu toate argumentele
+    // constructor cu toate argumentele
     public CuptorIncorporabil(String marca, String model, double pret, int capacitate,
                               int numarPrograme, boolean functieAutocuratare, String clasaEnergetica) {
         this.marca = marca;
@@ -33,19 +33,19 @@ public class CuptorIncorporabil implements EchipamentBucatarie {
         this.clasaEnergetica = clasaEnergetica;
     }
 
-    // Implementare metodă turnOn
+    // implementare metoda turnOn
     @Override
     public void turnOn() {
         System.out.println("Cuptorul incorporabil " + marca + " este acum pornit.");
     }
 
-    // Implementare metodă turnOff
+    // implementare metoda turnOff
     @Override
     public void turnOff() {
         System.out.println("Cuptorul incorporabil " + marca + " este acum oprit.");
     }
 
-    // Implementare metodă toString
+    // implementare metoda toString
     @Override
     public String toString() {
         return "CuptorIncorporabil [Marca=" + marca + ", Model=" + model + ", Pret=" + pret +

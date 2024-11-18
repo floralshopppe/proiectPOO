@@ -1,17 +1,17 @@
 package helper_classes;
 
 public class CuptorCuMicrounde implements EchipamentBucatarie {
-    // Atribute specifice Cuptor Cu Microunde
+    // atribute specifice Cuptor Cu Microunde
     String marca;
     String model;
     double pret;
     String culoare;
-    int putere; // în wați
-    double capacitate; // în litri
+    int putere; // in wati
+    double capacitate; // in litri
     boolean functieGrill;
-    boolean estePornit; // Starea de funcționare
+    boolean estePornit; // starea de functionare
 
-    // Constructor fără argumente
+    // constructor fara argumente
     public CuptorCuMicrounde() {
         this.marca = "Default";
         this.model = "Standard";
@@ -23,7 +23,7 @@ public class CuptorCuMicrounde implements EchipamentBucatarie {
         this.estePornit = false;
     }
 
-    // Constructor cu toate argumentele
+    // constructor cu toate argumentele
     public CuptorCuMicrounde(String marca, String model, double pret, String culoare,
                              int putere, double capacitate, boolean functieGrill) {
         this.marca = marca;
@@ -36,21 +36,21 @@ public class CuptorCuMicrounde implements EchipamentBucatarie {
         this.estePornit = false;
     }
 
-    // Implementare metodă turnOn
+    // implementare metoda turnOn
     @Override
     public void turnOn() {
         estePornit = true;
         System.out.println("Cuptorul cu microunde " + marca + " este acum pornit.");
     }
 
-    // Implementare metodă turnOff
+    // implementare metoda turnOff
     @Override
     public void turnOff() {
         estePornit = false;
         System.out.println("Cuptorul cu microunde " + marca + " este acum oprit.");
     }
 
-    // Implementare metodă toString
+    // implementare metoda toString
     @Override
     public String toString() {
         return "CuptorCuMicrounde [Marca=" + marca + ", Model=" + model + ", Pret=" + pret +
