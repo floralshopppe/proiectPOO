@@ -5,8 +5,8 @@ import helper_classes.*;
 public class CongelatorTestDrive {
     public static void main(String[] args) {
         Congelator congelator1 = new Congelator();
-        Congelator congelator2 = new Congelator("Samsung", -4, 200, -120, 160, "Alb", -1, false);
-        Congelator congelator3 = new Congelator("Daewoo", 100, 200, 120, 160, "Alb", 1, true);
+        Congelator congelator2 = new Congelator("Samsung", -4, 200, -120, 160, "Alb", false, -1);
+        Congelator congelator3 = new Congelator("Daewoo", 100, 200, 120, 160, "Alb", true, 1);
         Congelator[] array = { congelator1, congelator2, congelator3 };
 
         printObjects(array);
