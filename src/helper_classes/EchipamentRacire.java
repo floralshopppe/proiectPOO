@@ -7,17 +7,19 @@ public abstract class EchipamentRacire {
     private int volumNet;
     private String culoare;
     protected int temperatura;
+    protected boolean isOn;
     protected static int idEchipamentRacire = 0;
 
     public EchipamentRacire() {
         marca = "necunoscut";
         culoare = "necunoscut";
         temperatura = -4;
+        isOn = false;
         idEchipamentRacire++;
     }
 
     public EchipamentRacire(String marcaString, int latimeMilimetri, int inaltimeMilimetri, int adancimeMilimetri,
-            int volumNetLitri, String culoareString) {
+            int volumNetLitri, String culoareString, boolean isOn) {
         if (marcaString.isBlank() || marcaString.isEmpty()) {
             marca = "necunoscut";
         } else {
@@ -53,6 +55,7 @@ public abstract class EchipamentRacire {
         } else {
             culoare = culoareString.toLowerCase();
         }
+        this.isOn = isOn;
     }
 
     public EchipamentRacire(EchipamentRacire other) {
@@ -62,6 +65,7 @@ public abstract class EchipamentRacire {
         inaltime = other.inaltime;
         volumNet = other.volumNet;
         culoare = other.culoare;
+        isOn = other.isOn;
     }
 
     public String getMarca() {
@@ -95,6 +99,7 @@ public abstract class EchipamentRacire {
     public static int getIdEchipamentRacire() {
         return idEchipamentRacire;
     }
+
 
     public void setMarca(String marca) {
         this.marca = marca;
