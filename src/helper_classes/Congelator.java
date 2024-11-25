@@ -2,17 +2,18 @@ package helper_classes;
 
 public class Congelator extends EchipamentRacire implements EchipamentBucatarie {
     private int numarUsi;
-    protected static int idCongelator = 0;
+    private static int idCongelator = 0;
 
     public Congelator() {
         super();
         numarUsi = 1;
+        idCongelator++;
     }
 
     public Congelator(String marca, int latimeMilimetri, int inaltimeMilimetri, int adancimeMilimetri,
             int volumNetLitri,
-            String culoareString, int numarUsi) {
-        super(marca, latimeMilimetri, inaltimeMilimetri, adancimeMilimetri, volumNetLitri, culoareString);
+            String culoareString, boolean isOn, int numarUsi) {
+        super(marca, latimeMilimetri, inaltimeMilimetri, adancimeMilimetri, volumNetLitri, culoareString, isOn);
         if (numarUsi < 1) {
             this.numarUsi = 1;
         } else {
@@ -28,15 +29,21 @@ public class Congelator extends EchipamentRacire implements EchipamentBucatarie 
 
     @Override
     public void turnOff() {
+        isOn = false;
         System.out.println("Congelatorul a fost inchis");
     }
 
     @Override
     public void turnOn() {
+        isOn = true;
         System.out.println("Congelatorul a fost pornit");
     }
 
     public void racireRapida() {
+        if (isOn == false) {
+
+            this.turnOn();
+        }
         System.out.println("Congelatorul a activat modul racire rapida pentru 20 de min");
 
     }

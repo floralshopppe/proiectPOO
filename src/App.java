@@ -7,7 +7,7 @@ public class App {
         ArrayList<Congelator> arrayCongelatoare = new ArrayList<Congelator>();
 
         for (int index = 0; index < 10; index++) {
-            arrayCongelatoare.add(new Congelator("test", index, index, index, index, "rosu", index));
+            arrayCongelatoare.add(new Congelator("test", index, index, index, index, "rosu", false, index));
         }
         for (int index = 0; index < arrayCongelatoare.size(); index++) {
             System.out.println("#" + index + " " + arrayCongelatoare.get(index).toString());
