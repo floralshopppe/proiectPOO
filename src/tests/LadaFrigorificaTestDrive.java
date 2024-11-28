@@ -4,10 +4,11 @@ import helper_classes.*;
 
 public class LadaFrigorificaTestDrive {
     public static void main(String[] args) {
-        LadaFrigorifica ladaFrigo1 = new LadaFrigorifica();
-        LadaFrigorifica ladaFrigo2 = new LadaFrigorifica("Samsung", 120, 200, 120, 160, "Alb", false, -4);
-        LadaFrigorifica ladaFrigo3 = new LadaFrigorifica("Daewoo", 100, 150, 100, 160, "Negru", true, 2);
-        LadaFrigorifica[] array = { ladaFrigo1, ladaFrigo2, ladaFrigo3 };
+        LadaFrigorifica ladaFrigo0 = new LadaFrigorifica();
+        LadaFrigorifica ladaFrigo1 = new LadaFrigorifica("Samsung", 120, 200, 120, 160, "Alb", false, -4);
+        LadaFrigorifica ladaFrigo2 = new LadaFrigorifica("Daewoo", 100, 150, 100, 160, "Negru", true, 2);
+        LadaFrigorifica ladaFrigo3 = new LadaFrigorifica(ladaFrigo2);
+        LadaFrigorifica[] array = { ladaFrigo0, ladaFrigo1, ladaFrigo2, ladaFrigo3};
         printObjects(array);
         System.out.println();
 
