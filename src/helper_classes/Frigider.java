@@ -1,14 +1,14 @@
 package helper_classes;
 public class Frigider implements EchipamentBucatarie {
     // Atribute specifice Frigider
-    String marca;
-    String model;
-    double pret;
-    String culoare;
-    String material;
-    int capacitateLitri;
-    boolean sistemNoFrost;
-    boolean estePornit; // Starea de funcționare
+    public String marca; // Modificat la public
+    public String model; // Modificat la public
+    public double pret; // Modificat la public
+    public String culoare; // Modificat la public
+    public String material; // Modificat la public
+    public int capacitateLitri; // Modificat la public
+    public boolean sistemNoFrost; // Modificat la public
+    public boolean estePornit;
 
     // Constructor fără argumente
     public Frigider() {

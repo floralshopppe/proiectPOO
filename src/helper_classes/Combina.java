@@ -2,13 +2,13 @@ package helper_classes;
 
 public class Combina implements EchipamentBucatarie {
     // Atribute specifice Combina
-    String marca;
-    String model;
-    double pret;
-    int capacitateFrigider;
-    int capacitateCongelator;
-    boolean functieSuperFreeze;
-    int nivelZgomot;
+    public String marca; // Modificat la public
+    public String model; // Modificat la public
+    public double pret; // Modificat la public
+    public int capacitateFrigider; // Modificat la public
+    public int capacitateCongelator; // Modificat la public
+    public boolean functieSuperFreeze; // Modificat la public
+    public int nivelZgomot; // Modificat la public
 
     // Constructor fără argumente
     public Combina() {
