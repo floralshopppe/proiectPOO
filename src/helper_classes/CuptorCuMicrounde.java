@@ -2,14 +2,14 @@ package helper_classes;
 
 public class CuptorCuMicrounde implements EchipamentBucatarie {
     // atribute specifice Cuptor Cu Microunde
-    String marca;
-    String model;
-    double pret;
-    String culoare;
-    int putere; // in wati
-    double capacitate; // in litri
-    boolean functieGrill;
-    boolean estePornit; // starea de functionare
+    public String marca;
+    public String model;
+    public double pret;
+    public String culoare;
+    public int putere; // in wati
+    public double capacitate; // in litri
+    public boolean functieGrill;
+    public boolean estePornit; // starea de functionare
 
     // constructor fara argumente
     public CuptorCuMicrounde() {

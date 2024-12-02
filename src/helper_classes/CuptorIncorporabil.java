@@ -2,13 +2,13 @@ package helper_classes;
 
 public class CuptorIncorporabil implements EchipamentBucatarie {
     // atribute specifice Cuptor Incorporabil
-    String marca;
-    String model;
-    double pret;
-    int capacitate; // in litri
-    int numarPrograme;
-    boolean functieAutocuratare;
-    String clasaEnergetica;
+    public String marca;
+    public String model;
+    public double pret;
+    public int capacitate; // in litri
+    public int numarPrograme;
+    public boolean functieAutocuratare;
+    public String clasaEnergetica;
 
     // constructor fara argumente
     public CuptorIncorporabil() {
