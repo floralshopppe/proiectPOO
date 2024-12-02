@@ -2,7 +2,7 @@ package tests;
 
 import helper_classes.*;
 
-public class AfisareConditionala {
+public class AfisareConditionalaCuptoare {
     public static void main(String[] args) {
         // Cream vectorul de Cuptoare Incorporabile
         CuptorIncorporabil[] cuptoareIncorporabile = new CuptorIncorporabil[5];
