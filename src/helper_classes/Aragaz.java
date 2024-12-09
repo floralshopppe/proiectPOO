@@ -4,13 +4,13 @@ public class Aragaz implements EchipamentBucatarie {
     // Atribute specifice Aragaz
     String marca;
     String model;
-    double pret;
-    int numarArzatoare;
+    public double pret;
+    public int numarArzatoare;
     boolean aprindereElectrica;
     String tipCombustibil; // Gaz, Electric, Mixt
     boolean cuptorInclus;
 
-    // Constructor fara argumente
+    // Constructor fara argumente 
     public Aragaz() {
         this.marca = "Default";
         this.model = "Standard";

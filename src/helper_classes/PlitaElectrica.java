@@ -4,8 +4,8 @@ public class PlitaElectrica implements EchipamentBucatarie {
     // Atribute specifice Plita Electrica
     String marca;
     String model;
-    double pret;
-    int numarZoneIncalzire;
+    public Double pret;
+    public int numarZoneIncalzire;
     String tipControl; // Touch, Mecanic
     boolean functieBlocareCopii;
     int putereTotala; // in W
