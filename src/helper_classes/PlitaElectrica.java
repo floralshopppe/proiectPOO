@@ -2,13 +2,13 @@ package helper_classes;
 
 public class PlitaElectrica implements EchipamentBucatarie {
     // Atribute specifice Plita Electrica
-    String marca;
-    String model;
+    public String marca;
+    public String model;
     public Double pret;
     public int numarZoneIncalzire;
-    String tipControl; // Touch, Mecanic
-    boolean functieBlocareCopii;
-    int putereTotala; // in W
+    public String tipControl; // Touch, Mecanic
+    public boolean functieBlocareCopii;
+    public int putereTotala; // in W
 
     // Constructor fara argumente
     public PlitaElectrica() {

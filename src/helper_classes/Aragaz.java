@@ -2,13 +2,13 @@ package helper_classes;
 
 public class Aragaz implements EchipamentBucatarie {
     // Atribute specifice Aragaz
-    String marca;
-    String model;
+    public String marca;
+    public String model;
     public double pret;
     public int numarArzatoare;
-    boolean aprindereElectrica;
-    String tipCombustibil; // Gaz, Electric, Mixt
-    boolean cuptorInclus;
+    public boolean aprindereElectrica;
+    public String tipCombustibil; // Gaz, Electric, Mixt
+    public boolean cuptorInclus;
 
     // Constructor fara argumente 
     public Aragaz() {
