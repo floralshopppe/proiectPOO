@@ -11,28 +11,28 @@ import java.util.ArrayList;
 public class CombinaGUI {
     public static void main(String[] args) {
         // Creare fereastră principală
-        JFrame frame = new JFrame("Filtrare Combine");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(600, 400);
+        JFrame frame = new JFrame("Filtrare Combine"); // cream fereastra principala cu titlul ...
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 
+        frame.setSize(600, 400); 
 
-        // Panou principal cu fundal mov
-        JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(2, 2, 10, 10));
-        panel.setBackground(new Color(240, 230, 255)); // Fundal mov deschis
+        // Panou principal
+        JPanel panel = new JPanel(); // cream panoul pt componente
+        panel.setLayout(new GridLayout(2, 2, 10, 10)); 
+        panel.setBackground(new Color(240, 230, 255)); 
 
-        // Etichete și câmpuri de text
-        JLabel labelCapacitate = new JLabel("Capacitate minimă:");
-        labelCapacitate.setForeground(new Color(100, 50, 200)); // Text mov închis
-        JTextField textCapacitate = new JTextField();
+        // Etichete și câmpuri 
+        JLabel labelCapacitate = new JLabel("Capacitate minimă:"); //eticheta 
+        labelCapacitate.setForeground(new Color(100, 50, 200)); 
+        JTextField textCapacitate = new JTextField(); //camp
 
         JLabel labelPret = new JLabel("Preț maxim:");
-        labelPret.setForeground(new Color(100, 50, 200)); // Text mov închis
+        labelPret.setForeground(new Color(100, 50, 200)); 
         JTextField textPret = new JTextField();
 
-        // Buton pentru afișare cu design personalizat
+        // Buton pentru afișare
         JButton btnAfisare = new JButton("Afișează combinele");
-        btnAfisare.setBackground(new Color(150, 100, 255)); // Mov închis
-        btnAfisare.setForeground(Color.WHITE); // Text alb
+        btnAfisare.setBackground(new Color(150, 100, 255)); 
+        btnAfisare.setForeground(Color.WHITE); 
 
         // Zonă de afișare rezultate
         JTextArea textRezultate = new JTextArea();
@@ -48,7 +48,7 @@ public class CombinaGUI {
         panel.add(textPret);
         panel.add(btnAfisare);
 
-        // Adăugare panou și zonă rezultate în fereastră
+        // Adăugare panou și zona rezultate în fereastră
         frame.add(panel, BorderLayout.NORTH);
         frame.add(scrollPane, BorderLayout.CENTER);
 
@@ -56,22 +56,22 @@ public class CombinaGUI {
         btnAfisare.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Citire valori din GUI
+               
                 String capacitateStr = textCapacitate.getText();
                 String pretStr = textPret.getText();
 
                 int capacitateMinima = capacitateStr.isEmpty() ? 0 : Integer.parseInt(capacitateStr);
                 double pretMaxim = pretStr.isEmpty() ? Double.MAX_VALUE : Double.parseDouble(pretStr);
 
-                // Generare instanțe
+                
                 ArrayList<Combina> combine = new ArrayList<>();
                 for (int i = 0; i < 5; i++) {
                     combine.add(new Combina("Combina" + i, "Model" + i, 2500.0 + i * 200,
                             200 + i * 10, 100 + i * 5, i % 2 == 0, 40 + i));
                 }
 
-                // Filtrare și afișare rezultate
-                StringBuilder rezultate = new StringBuilder("Rezultate pentru combine:\n");
+                // afișare rezultate
+                StringBuilder rezultate = new StringBuilder("Rezultate pentru combine:\n"); // stringbuilder pt ca textul e dinamic
                 for (Combina combina : combine) {
                     if (combina.capacitateFrigider >= capacitateMinima && combina.pret <= pretMaxim) {
                         rezultate.append(combina).append("\n");
@@ -81,7 +81,7 @@ public class CombinaGUI {
             }
         });
 
-        // Afișare fereastră
+        
         frame.setVisible(true);
     }
 }
