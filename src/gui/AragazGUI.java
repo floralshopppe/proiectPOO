@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class AragazGUI {
     public static void main(String[] args) {
         // Creare fereastră principală
-        JFrame frame = new JFrame("Filtrare Aragazuri");
+        JFrame frame = new JFrame("Filtrare Aragaze");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(600, 400);
         frame.setLocationRelativeTo(null); // Centrare pe ecran
