@@ -60,7 +60,7 @@ public class AragazGUI {
         frame.add(panel, BorderLayout.NORTH);
         frame.add(scrollPane, BorderLayout.CENTER);
 
-        // Setare ascultător pentru buton
+        // Setare pentru buton
         btnAfisare.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
