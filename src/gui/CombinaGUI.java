@@ -71,7 +71,7 @@ public class CombinaGUI {
                 }
 
                 // afișare rezultate
-                StringBuilder rezultate = new StringBuilder("Rezultate pentru combine:\n"); // stringbuilder pt ca textul e dinamic
+                StringBuilder rezultate = new StringBuilder("Rezultate pentru combine:\n"); 
                 for (Combina combina : combine) {
                     if (combina.capacitateFrigider >= capacitateMinima && combina.pret <= pretMaxim) {
                         rezultate.append(combina).append("\n");
