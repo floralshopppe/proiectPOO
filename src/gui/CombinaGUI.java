@@ -1,29 +1,28 @@
 package gui;
 
 import helper_classes.Combina;
-
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import javax.swing.*;
 
 public class CombinaGUI {
     public static void main(String[] args) {
         // Creare fereastră principală
-        JFrame frame = new JFrame("Filtrare Combine"); // cream fereastra principala cu titlul ...
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 
+        JFrame frame = new JFrame("Filtrare Combine"); 
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         frame.setSize(600, 400); 
 
         // Panou principal
-        JPanel panel = new JPanel(); // cream panoul pt componente
+        JPanel panel = new JPanel(); 
         panel.setLayout(new GridLayout(2, 2, 10, 10)); 
         panel.setBackground(new Color(240, 230, 255)); 
 
         // Etichete și câmpuri 
-        JLabel labelCapacitate = new JLabel("Capacitate minimă:"); //eticheta 
+        JLabel labelCapacitate = new JLabel("Capacitate minimă:"); 
         labelCapacitate.setForeground(new Color(100, 50, 200)); 
-        JTextField textCapacitate = new JTextField(); //camp
+        JTextField textCapacitate = new JTextField(); 
 
         JLabel labelPret = new JLabel("Preț maxim:");
         labelPret.setForeground(new Color(100, 50, 200)); 
@@ -37,11 +36,11 @@ public class CombinaGUI {
         // Zonă de afișare rezultate
         JTextArea textRezultate = new JTextArea();
         textRezultate.setEditable(false);
-        textRezultate.setBackground(new Color(245, 240, 255)); // Fundal alb-mov
-        textRezultate.setForeground(new Color(100, 50, 150)); // Text mov închis
+        textRezultate.setBackground(new Color(245, 240, 255)); 
+        textRezultate.setForeground(new Color(100, 50, 150)); 
         JScrollPane scrollPane = new JScrollPane(textRezultate);
 
-        // Adăugare componente în panou
+        
         panel.add(labelCapacitate);
         panel.add(textCapacitate);
         panel.add(labelPret);
@@ -71,7 +70,7 @@ public class CombinaGUI {
                 }
 
                 // afișare rezultate
-                StringBuilder rezultate = new StringBuilder("Rezultate pentru combine:\n"); // stringbuilder pt ca textul e dinamic
+                StringBuilder rezultate = new StringBuilder("Rezultate pentru combine:\n"); 
                 for (Combina combina : combine) {
                     if (combina.capacitateFrigider >= capacitateMinima && combina.pret <= pretMaxim) {
                         rezultate.append(combina).append("\n");
