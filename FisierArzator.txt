@@ -1,0 +1,10 @@
+Arctic,MasterCook,1200.0,4,true,Gaz,true
+Beko,FlamePro,1300.0,5,false,Gaz,true
+Electrolux,MixMaster,1400.0,6,true,Mixt,false
+Samsung,HeatWave,1500.0,4,false,Gaz,true
+Whirlpool,FirePlus,1600.0,5,true,Gaz,false
+LG,BlueFlame,1700.0,6,false,Electric,true
+Bosch,CookMate,1800.0,4,true,Gaz,false
+Siemens,CuisinePro,1900.0,5,true,Mixt,true
+Gorenje,QuickHeat,2000.0,6,true,Gaz,true
+Miele,PerfectChef,2100.0,5,false,Electric,false
